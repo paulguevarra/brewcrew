@@ -1,0 +1,15 @@
+{{#partial "content"}}
+
+    <h1> List of Breweries!</h1>
+
+    {{#if brewery}}
+        {{#each brewery }}
+         <p>Current brewery:</p>
+         <p>{{ description }} <a href="/brewery/{{id}}">read more...</a></p>
+        {{/each}}
+    {{else}}
+     <p>No breweries!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
